@@ -1,4 +1,4 @@
-/* This program helps figure out payrates for overtime hours worked
+/* This program helps figure out leap years
 Author: Michelle Harrop*/
 "use strict";
 
