@@ -4,9 +4,9 @@ Author: Michelle Harrop*/
 
 //user inputs
 var payrate = 20;
-var actualHoursWorked = 40;
-var hoursOvertime = actualHoursWorked - 40;
-var overtimePayrate = (1.5 * payrate) * hoursOvertime + (payrate * 40);
+var actualHoursWorked = 90;
+var hoursOvertime = actualHoursWorked - 80;
+var overtimePayrate = (1.5 * payrate) * hoursOvertime + (payrate * 80);
 
 var grossPay = payrate * actualHoursWorked;
 
@@ -14,7 +14,7 @@ var income = overtimePayrate;
 var filingStatus = "Joint";
 var taxRate;
 //hours and overtime
-if (actualHoursWorked<=40)
+if (actualHoursWorked<=80)
 {
     console.log(grossPay);
 }
