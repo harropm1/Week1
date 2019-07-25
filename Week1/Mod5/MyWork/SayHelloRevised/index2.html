@@ -1,0 +1,25 @@
+<!--Anonymous Functions all the way around-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Demo</title>
+        <script src="scripts/greetingsRevised.js"></script>
+        <script>
+        window.onclick = function()
+        {
+            const btn = document.getElementById("helloBtn")
+            btn.onclick = function() 
+            {
+                const nameField = document.getElementById("name");
+                let name = nameField.value;
+                alert("Hello " + name);
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <p>Enter your name: <input type="text" id="name" /></p>
+        <input id="helloBtn" type="button" value="Greet the User" />
+    </body>
+</html>
