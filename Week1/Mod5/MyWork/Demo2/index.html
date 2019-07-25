@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Demo</title>
+        <script>
+            "use strict";
+            
+            function sayHello()
+            {
+                alert("Hello!");
+            }
+            function init()
+            {
+                const btn = document.getElementById("helloBtn");
+                btn.onclick = sayHello;
+            }
+
+            window.onload = init;
+        </script>
+    </head>
+    <body>
+        <input id="helloBtn" type="button" value="Say Hello" />
+    </body>
+</html>
